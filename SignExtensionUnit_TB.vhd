@@ -24,7 +24,7 @@ ARCHITECTURE behavior OF SignExtensionUnit_TB IS
    signal data32 : std_logic_vector(31 downto 0);
  
 BEGIN
- 
+  
 	-- Instantiate the Unit Under Test (UUT)
    uut: SignExtensionUnit PORT MAP (
           data13 => data13,
