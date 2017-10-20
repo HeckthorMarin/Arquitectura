@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 entity MuxRF_SEUtoALU is
     Port ( crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
            imm32 : in  STD_LOGIC_VECTOR (31 downto 0);
-			  i : in STD_LOGIC;
+	   i : in STD_LOGIC;
            data32 : out  STD_LOGIC_VECTOR (31 downto 0) := (others => '0'));
 end MuxRF_SEUtoALU;
 
