@@ -3,13 +3,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.all;
 use STD.TEXTIO.all;
 
-entity FirstProcessor is
+entity SecondProcessor is
     Port ( CLK : in  STD_LOGIC;
            rst : in  STD_LOGIC;
            aluresult : out  STD_LOGIC_VECTOR (31 downto 0));
-end FirstProcessor;
+end SecondProcessor;
 
-architecture Behavioral of FirstProcessor is	
+architecture Behavioral of SecondProcessor is	
 
 	component Adder
 	 Port ( op_a : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -20,7 +20,7 @@ architecture Behavioral of FirstProcessor is
 	component ProgramCounter
 	 Port ( address_in : in  STD_LOGIC_VECTOR (31 downto 0);
            CLK : in  STD_LOGIC;
-			  rst : in STD_LOGIC;
+	   rst : in STD_LOGIC;
            address_out : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component;
 	
