@@ -1,14 +1,14 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
-ENTITY FourthProcessor_TB IS
-END FourthProcessor_TB;
+ENTITY Second_Processor_TB IS
+END Second_Processor_TB;
  
-ARCHITECTURE behavior OF FourthProcessor_TB IS 
+ARCHITECTURE behavior OF Second_Processor_TB IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT FourthProcessor
+    COMPONENT SecondProcessor
     PORT(
          CLK : IN  std_logic;
          rst : IN  std_logic;
@@ -30,7 +30,7 @@ ARCHITECTURE behavior OF FourthProcessor_TB IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: FourthProcessor PORT MAP (
+   uut: SecondProcessor PORT MAP (
           CLK => CLK,
           rst => rst,
           aluresult => aluresult
